@@ -489,7 +489,7 @@ class MainWindow(QtWidgets.QWidget):
     def openFile(self):
         self.loaded = False
 
-        file = QtWidgets.QFileDialog.getOpenFileName(None, "Open File", "", "Binary Resources Texture (*.bntx)")[0]
+        file = QtWidgets.QFileDialog.getOpenFileName(None, "Open File", "", "Binary Resources Texture (*.bfres *.bntx)")[0]
         if not file:
             return False
 
